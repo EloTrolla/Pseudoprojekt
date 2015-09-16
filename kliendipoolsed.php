@@ -1,7 +1,10 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: elo
- * Date: 16/09/15
- * Time: 12:00
- */
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trolla</title>
+</head>
+<body>
+
+</body>
+</html>
