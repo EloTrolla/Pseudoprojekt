@@ -6,5 +6,7 @@
 </head>
 <body>
 
+<button type="button" onclick="alert('Tere maailm!')">Tere maailm!</button>
+
 </body>
 </html>
