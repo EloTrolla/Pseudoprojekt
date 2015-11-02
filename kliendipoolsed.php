@@ -129,6 +129,15 @@
 
 
 
+<!-- -- Ylesanne_9   Paremkliki keelamine veebilehel -- -->
+
+<script>
+
+    $(document).contextmenu( function() {
+        return false;
+    });
+
+</script>
 
 </body>
 </html>
