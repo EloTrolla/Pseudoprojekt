@@ -11,7 +11,8 @@
 </head>
 <body>
 
-<button type="button" onclick="alert('Tere maailm!')">Tere maailm!</button><br>
+<button type="button" onclick="alert('Tere maailm!')">Tere maailm!</button>
+<br>
 <br>
 
 <a href="http://www.khk.ee" target="_blank" onclick="alert('Tere maailm!')">Tere maailm!</a><br>
@@ -27,7 +28,7 @@
     <p>Vajuta kassi pildile, et ilmuks koera pilt. Või vastupidi.</p>
 
 
-    <!-- -- Ylesanne_5  Kass koeraks javascript -- --
+    <!-- --   Ylesanne_5  Kass koeraks javascript -- --
 
 
     <script>
@@ -48,12 +49,11 @@
     <script>
 
 
-
-        $(document).ready(function(){
-            $("#minupilt").click(function(){
-                if($("#minupilt").attr("src") == "kama/kass.png"){
+        $(document).ready(function () {
+            $("#minupilt").click(function () {
+                if ($("#minupilt").attr("src") == "kama/kass.png") {
                     $("#minupilt").attr("src", "kama/koer.png");
-                }else{
+                } else {
                     $("#minupilt").attr("src", "kama/kass.png");
                 }
             });
@@ -61,23 +61,24 @@
 
     </script>
 
+</div>
 
 
-<!-- -- Ylesanne_7  Taustav2rv -- -->
+    <!-- -- Ylesanne_7  Taustav2rv -- -->
 
-    <p>Vali lemmik taustavärv:</p>
+<p>Vali lemmik taustavärv:</p>
 
-    <input type="button" id="change_background_blue" value="sinine" />
-    <input type="button" id="change_background_red" value="punane" />
-    <input type="button" id="change_background_green" value="roheline" />
-    <input type="button" id="change_background_white" value="valge" />
+<!--
+    <input type="button" id="change_background_blue" value="blue" />
+    <input type="button" id="change_background_red" value="red" />
+    <input type="button" id="change_background_green" value="green" />
+    <input type="button" id="change_background_white" value="white" />
 
     <script>
 
         $( "#change_background_blue" ).on( "click", function() {
             $("body").first().css("background-color","blue");
         });
-
 
         $( "#change_background_red" ).on( "click", function() {
             $("body").first().css("background-color","red");
@@ -93,8 +94,40 @@
 
     </script>
 
+-->
 
-</div>
+
+
+    <!-- Ylesanne_8  Taustav2rv revisited -->
+
+
+
+<button id="blue">Blue</button>
+<button id="red">Red</button>
+<button id="green">Green</button>
+<button id="white">White</button>
+
+<script>
+
+    $('#blue').click(function () {
+        $('body').css('backgroundColor', $('#blue').text());
+    });
+
+    $('#red').click(function () {
+        $('body').css('backgroundColor', $('#red').text());
+    });
+
+    $('#green').click(function () {
+        $('body').css('backgroundColor', $('#green').text());
+    });
+
+    $('#white').click(function () {
+        $('body').css('backgroundColor', $('#white').text());
+    });
+
+</script>
+
+
 
 
 </body>
