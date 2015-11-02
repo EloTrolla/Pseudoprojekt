@@ -6,7 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 
-    <title>Pseudoprjekt_VS15_EloTrolla</title>
+    <title>Pseudoprojekt_VS15_EloTrolla</title>
 
 </head>
 <body>
@@ -57,6 +57,38 @@
                     $("#minupilt").attr("src", "kama/kass.png");
                 }
             });
+        });
+
+    </script>
+
+
+
+<!-- -- Ylesanne_7  Taustav2rv -- -->
+
+    <p>Vali lemmik taustavärv:</p>
+
+    <input type="button" id="change_background_blue" value="sinine" />
+    <input type="button" id="change_background_red" value="punane" />
+    <input type="button" id="change_background_green" value="roheline" />
+    <input type="button" id="change_background_white" value="valge" />
+
+    <script>
+
+        $( "#change_background_blue" ).on( "click", function() {
+            $("body").first().css("background-color","blue");
+        });
+
+
+        $( "#change_background_red" ).on( "click", function() {
+            $("body").first().css("background-color","red");
+        });
+
+        $( "#change_background_green" ).on( "click", function() {
+            $("body").first().css("background-color","green");
+        });
+
+        $( "#change_background_white" ).on( "click", function() {
+            $("body").first().css("background-color","white");
         });
 
     </script>
