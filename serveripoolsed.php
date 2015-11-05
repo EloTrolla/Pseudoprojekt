@@ -5,6 +5,14 @@ $perenimi = "Trolla";
 $vanus = 123;
 $eesnimi_algab_vokaaliga = true;
 
-echo "$eesnimi $perenimi ($vanus)";
+
+$isik = array(
+    "eesnimi" => "Elo",
+    "perenimi" => "Trolla",
+    "vanus" => "123"
+
+);
+
+echo "$isik[eesnimi] $isik[perenimi] ($isik[vanus])";
 
 ?>
