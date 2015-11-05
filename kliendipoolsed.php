@@ -64,7 +64,8 @@
 </div>
 
 
-    <!-- -- Ylesanne_7  Taustav2rv -- -->
+
+<!-- -- Ylesanne_7  Taustav2rv -- -->
 
 <p>Vali lemmik taustavärv:</p>
 
@@ -98,14 +99,14 @@
 
 
 
-    <!-- Ylesanne_8  Taustav2rv revisited -->
-
+<!-- Ylesanne_8  Taustav2rv revisited -->
 
 
 <button id="blue">Blue</button>
 <button id="red">Red</button>
 <button id="green">Green</button>
-<button id="white">White</button>
+<button id="white">White</button><br>
+<br>
 
 <script>
 
@@ -132,12 +133,29 @@
 <!-- -- Ylesanne_9   Paremkliki keelamine veebilehel -- -->
 
 <script>
-
-    $(document).contextmenu( function() {
+    $(document).bind("contextmenu", function () {
         return false;
     });
-
 </script>
+
+
+
+<!-- -- Ylesanne_10   Paremkliki lubamine nupul -- -->
+
+
+<button id="btn">Luba paremklõps sellel nupul</button>
+
+<script>
+    $("#btn").on("click", function () {
+        $(document).unbind();
+    });
+</script>
+
+
+
+
+
+
 
 </body>
 </html>
