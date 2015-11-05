@@ -22,6 +22,7 @@
 <br>
 
 <div>
+    <button id="btn1">Peida/näita pilti!</button><br><br>
 
     <img id="minupilt" onclick="changeImage()" src="kama/kass.png">
 
@@ -64,7 +65,6 @@
 </div>
 
 
-
 <!-- -- Ylesanne_7  Taustav2rv -- -->
 
 <p>Vali lemmik taustavärv:</p>
@@ -98,14 +98,14 @@
 -->
 
 
-
 <!-- Ylesanne_8  Taustav2rv revisited -->
 
 
 <button id="blue">Blue</button>
 <button id="red">Red</button>
 <button id="green">Green</button>
-<button id="white">White</button><br>
+<button id="white">White</button>
+<br>
 <br>
 
 <script>
@@ -129,7 +129,6 @@
 </script>
 
 
-
 <!-- -- Ylesanne_9   Paremkliki keelamine veebilehel -- -->
 
 <script>
@@ -139,11 +138,10 @@
 </script>
 
 
-
 <!-- -- Ylesanne_10   Paremkliki lubamine nupul -- -->
 
 
-<button id="btn">Luba paremklõps sellel nupul</button>
+<button id="btn">Luba paremklõps sellel nupul</button><br><br>
 
 <script>
     $("#btn").on("click", function () {
@@ -152,9 +150,15 @@
 </script>
 
 
+<!-- -- Ylesanne_11   Toggle (peida/n2ita pilti, button pildi juures) -- -->
 
-
-
+<script>
+    $(document).ready(function () {
+        $("#btn1").click(function () {
+            $("img").toggle();
+        });
+    });
+</script>
 
 
 </body>
