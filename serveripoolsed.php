@@ -1,5 +1,8 @@
 <?php
 
-echo "Tere maailm!";
+$eesnimi = "Elo";
+$perenimi = "Trolla";
+
+echo $eesnimi." ".$perenimi;
 
 ?>
