@@ -9,7 +9,7 @@
     <title>Pseudoprojekt_VS15_EloTrolla</title>
 
 </head>
-<body>
+<body oncontextmenu="return false;">
 
 <button type="button" onclick="alert('Tere maailm!')">Tere maailm!</button>
 <br>
@@ -129,23 +129,15 @@
 </script>
 
 
-<!-- -- Ylesanne_9   Paremkliki keelamine veebilehel -- -->
-
-<script>
-    $(document).bind("contextmenu", function () {
-        return false;
-    });
-</script>
-
 
 <!-- -- Ylesanne_10   Paremkliki lubamine nupul -- -->
 
 
-<button id="btn">Luba paremklõps sellel nupul</button><br><br>
+<button id="nupp">Luba paremklõps</button>
 
 <script>
-    $("#btn").on("click", function () {
-        $(document).unbind();
+    $("#nupp").click(function(){
+        $("body").removeAttr("oncontextmenu");
     });
 </script>
 
