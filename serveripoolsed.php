@@ -64,5 +64,10 @@ else
 */
 
 
+// 21. GET.   aadressiribale lisa ?koer=terjer. Parameetril 'koer' on v22rtus 'terjer'. $_GET v6tab 'koera' v22rtuse.
+
+if(isset($_GET['koer'])) {
+    echo $_GET ['koer']."</br>";
+};
 
 ?>
