@@ -4,12 +4,17 @@ $eesnimi = "Elo";
 $perenimi = "Trolla";
 $vanus = 123;
 
+$arv1 = 1.23;
+$arv2 = 2.34;
 
 
 
-/*
+// 20. Floats.
 
-// Objektid, klassid
+echo $arv1+$arv2;
+
+
+// 18. Objektid, klassid
 
 class Person //Klass on nagu sabloon, vorm
 {
@@ -42,11 +47,11 @@ $isik2->sugu = "Mees";
 
 
 
-// Nimi algab/ei algab vokaaliga
+// 19. Funktsioonid. Nimi algab/ei algab vokaaliga
 
+/*
+if (preg_match("/^[a, e, i, o, u, õ, ä, ö, ü]/i", $eesnimi))   // 'i' - ei tee vahet suur- ja v'iket'htedel; '^' - j'rgnevad t'hed on rea/stringi alguses;
 
-if (preg_match("/^[a, e, i, o, u, õ, ä, ö, ü]/i", $eesnimi))     /* 'i' - ei tee vahet suur- ja v'iket'htedel;
-                                                                    '^' - j'rgnevad t'hed on rea/stringi alguses; */
 {
 
     echo "$eesnimi $perenimi eesnimi algab vokaaliga";
@@ -56,6 +61,7 @@ else
 {
     echo "$eesnimi $perenimi eesnimi ei alga vokaaliga";
 }
+*/
 
 
 
