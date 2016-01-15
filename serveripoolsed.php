@@ -3,11 +3,11 @@
 $eesnimi = "Elo";
 $perenimi = "Trolla";
 $vanus = 123;
-$eesnimi_algab_vokaaliga = true;
 
 
 
 
+/*
 
 // Objektid, klassid
 
@@ -36,23 +36,27 @@ $isik2->vanus = 11;
 $isik2->sugu = "Mees";
 */
 
-echo $isik->eesnimi.' '.$isik->perenimi.' '.'('.$isik->vanus.')'.' '.$isik->sugu.'<br>';
+// echo $isik->eesnimi.' '.$isik->perenimi.' '.'('.$isik->vanus.')'.' '.$isik->sugu.'<br>';
 
 
 
 
 
-// Nimi algab/ei alga nt. vokaaliga
+// Nimi algab/ei algab vokaaliga
+
 
 if (preg_match("/^[a, e, i, o, u, õ, ä, ö, ü]/i", $eesnimi))     /* 'i' - ei tee vahet suur- ja v'iket'htedel;
                                                                     '^' - j'rgnevad t'hed on rea/stringi alguses; */
 {
-    echo "Eesnimi algab vokaaliga";
+
+    echo "$eesnimi $perenimi eesnimi algab vokaaliga";
 }
 
 else
 {
-    echo "Eesnimi ei alga vokaaliga";
+    echo "$eesnimi $perenimi eesnimi ei alga vokaaliga";
 }
+
+
 
 ?>
