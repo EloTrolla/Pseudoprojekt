@@ -11,7 +11,7 @@ $arv2 = 2.34;
 
 // 20. Floats.
 
-echo $arv1+$arv2;
+// echo $arv1+$arv2;
 
 
 // 18. Objektid, klassid
@@ -66,8 +66,23 @@ else
 
 // 21. GET.   aadressiribale lisa ?koer=terjer. Parameetril 'koer' on v22rtus 'terjer'. $_GET v6tab 'koera' v22rtuse.
 
-if(isset($_GET['koer'])) {
-    echo $_GET ['koer']."</br>";
-};
+// if(isset($_GET['koer'])) {
+//    echo $_GET ['koer']."</br>";
+// };
+
+
+
+// 22. $_POST
+
+if(isset($_POST['kass'])) {
+    echo 'Kass on: ' . $_POST['kass'];
+}
 
 ?>
+
+<!--   22. $_POST   -->
+
+<form action="?" method="post">
+    <input name="kass" placeholder="Kassitõug">
+    <input type="submit">
+</form>
