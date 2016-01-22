@@ -1,4 +1,11 @@
 <!doctype html>
+
+<?php
+
+$page = (isset($_GET['page']))? $_GET['page']: 'home';
+?>
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,13 +18,12 @@
     <input type="submit">
 </form>
 
+
+
 <?php
-
-if(isset($_GET['page'])){
-             require $_GET['page'].".php";
-      }
-
+require $page . ".php";
 ?>
+
 
 </body>
 </html>
