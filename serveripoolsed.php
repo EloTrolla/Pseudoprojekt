@@ -74,11 +74,37 @@ else
 
 // 22. $_POST
 
-if(isset($_POST['kass'])) {
-    echo 'Kass on: ' . $_POST['kass'];
-}
+// if(isset($_POST['kass'])) {
+//     echo 'Kass on: ' . $_POST['kass'];
+// }
+
+
+
+// 23. Require
+
+
+
+
+
+/* Luua fail nimega index.php. Lisada sinna html5 boilerplate.
+
+<body> osasse lisada PHP märgendi vahele kontroll, kas eksisteerib muutuja nimega $_GET['page']
+ja kui eksisteerib, siis require'ida fail, mille nimeks on selle $_GET['page'] sisu pluss string ".php".
+ Näiteks kui $_GET['page'] väärtuseks oli home, siis requiretakse home.php. */
+
+
+
+
+
+
+
 
 ?>
+
+
+
+
+
 
 <!--   22. $_POST   -->
 
